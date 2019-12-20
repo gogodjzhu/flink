@@ -335,29 +335,6 @@ under the License.
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-enforcer-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>dependency-convergence</id>
-						<goals>
-							<goal>enforce</goal>
-						</goals>
-						<configuration>
-							<skip>true</skip>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-
-				<configuration>
-					<suppressionsLocation combine.self="override">/tools/maven/suppressions-runtime.xml</suppressionsLocation>
-				</configuration>
-			</plugin>
 			<!-- Scala Compiler -->
 			<plugin>
 				<groupId>net.alchim31.maven</groupId>

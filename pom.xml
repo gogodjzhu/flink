@@ -78,11 +78,11 @@ under the License.
 		<module>flink-quickstart</module>
 		<module>flink-contrib</module>
 		<module>flink-dist</module>
-		<module>flink-mesos</module>
+		<!--<module>flink-mesos</module>-->
 		<module>flink-metrics</module>
-		<module>flink-yarn</module>
-		<module>flink-yarn-tests</module>
-		<module>flink-fs-tests</module>
+		<!--<module>flink-yarn</module>-->
+		<!--<module>flink-yarn-tests</module>-->
+		<!--<module>flink-fs-tests</module>-->
 		<module>flink-docs</module>
 		<module>flink-python</module>
 		<module>flink-ml-parent</module>
