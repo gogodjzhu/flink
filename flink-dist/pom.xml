@@ -103,11 +103,11 @@ under the License.
 			<version>${project.version}</version>
 		</dependency>
         
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-mesos_${scala.binary.version}</artifactId>
-			<version>${project.version}</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-mesos_${scala.binary.version}</artifactId>-->
+			<!--<version>${project.version}</version>-->
+		<!--</dependency>-->
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
@@ -121,32 +121,32 @@ under the License.
 			<version>${project.version}</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-yarn_${scala.binary.version}</artifactId>
-			<version>${project.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.apache.flink</groupId>
-					<artifactId>flink-shaded-hadoop-2</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-yarn_${scala.binary.version}</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<exclusions>-->
+				<!--<exclusion>-->
+					<!--<groupId>org.apache.flink</groupId>-->
+					<!--<artifactId>flink-shaded-hadoop-2</artifactId>-->
+				<!--</exclusion>-->
+			<!--</exclusions>-->
+		<!--</dependency>-->
 
 		<!-- Default file system support. The Hadoop and MapR dependencies -->
 		<!--       are optional, so not being added to the dist jar        -->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-hadoop-fs</artifactId>
-			<version>${project.version}</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-hadoop-fs</artifactId>-->
+			<!--<version>${project.version}</version>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-mapr-fs</artifactId>
-			<version>${project.version}</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-mapr-fs</artifactId>-->
+			<!--<version>${project.version}</version>-->
+		<!--</dependency>-->
 
 		<!-- Concrete logging framework - we add this only here (and not in the 
 			root POM) to not tie the projects to one specific framework and make
@@ -170,148 +170,148 @@ under the License.
 			they are not included into the 'flink-dist' uber jar.
 		-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-examples-batch_${scala.binary.version}</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-examples-batch_${scala.binary.version}</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-examples-streaming_${scala.binary.version}</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-examples-streaming_${scala.binary.version}</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-examples-streaming-state-machine_${scala.binary.version}</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-examples-streaming-state-machine_${scala.binary.version}</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-examples-streaming-twitter_${scala.binary.version}</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-examples-streaming-twitter_${scala.binary.version}</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-gelly-examples_${scala.binary.version}</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-gelly-examples_${scala.binary.version}</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-examples-table_${scala.binary.version}</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-examples-table_${scala.binary.version}</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<!--
-			The following dependencies are packaged in 'opt/' 
-			The scope of these dependencies needs to be 'provided' so that
-			they are not included into the 'flink-dist' uber jar.
-		-->
+		<!--&lt;!&ndash;-->
+			<!--The following dependencies are packaged in 'opt/' -->
+			<!--The scope of these dependencies needs to be 'provided' so that-->
+			<!--they are not included into the 'flink-dist' uber jar.-->
+		<!--&ndash;&gt;-->
 
-		<!-- start optional Flink metrics reporters -->
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-metrics-dropwizard</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--&lt;!&ndash; start optional Flink metrics reporters &ndash;&gt;-->
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-metrics-dropwizard</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-metrics-graphite</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-metrics-graphite</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-metrics-influxdb_${scala.binary.version}</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-metrics-influxdb_${scala.binary.version}</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-metrics-prometheus_${scala.binary.version}</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-metrics-prometheus_${scala.binary.version}</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-metrics-statsd</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-metrics-statsd</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-metrics-datadog</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-metrics-datadog</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-metrics-slf4j</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
-		<!-- end optional Flink metrics reporters -->
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-metrics-slf4j</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
+		<!--&lt;!&ndash; end optional Flink metrics reporters &ndash;&gt;-->
 
-		<!-- start optional Flink libraries -->
+		<!--&lt;!&ndash; start optional Flink libraries &ndash;&gt;-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-cep_${scala.binary.version}</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-cep_${scala.binary.version}</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-cep-scala_${scala.binary.version}</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-cep-scala_${scala.binary.version}</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-gelly_${scala.binary.version}</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-gelly_${scala.binary.version}</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-gelly-scala_${scala.binary.version}</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-gelly-scala_${scala.binary.version}</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-table-uber_${scala.binary.version}</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-table-uber_${scala.binary.version}</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-table-uber-blink_${scala.binary.version}</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-table-uber-blink_${scala.binary.version}</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
@@ -320,54 +320,54 @@ under the License.
 			<scope>provided</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-state-processor-api_${scala.binary.version}</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-state-processor-api_${scala.binary.version}</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-azure-fs-hadoop</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-azure-fs-hadoop</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-s3-fs-hadoop</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-s3-fs-hadoop</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-s3-fs-presto</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-s3-fs-presto</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-swift-fs-hadoop</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-swift-fs-hadoop</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-oss-fs-hadoop</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-oss-fs-hadoop</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-queryable-state-runtime_${scala.binary.version}</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-queryable-state-runtime_${scala.binary.version}</artifactId>-->
+			<!--<version>${project.version}</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
@@ -376,12 +376,12 @@ under the License.
 			<scope>provided</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-shaded-netty-tcnative-dynamic</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<!-- end optional Flink libraries -->
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-shaded-netty-tcnative-dynamic</artifactId>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
+		<!--&lt;!&ndash; end optional Flink libraries &ndash;&gt;-->
 
 		<!-- test dependencies -->
 
