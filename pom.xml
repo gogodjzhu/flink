@@ -63,16 +63,16 @@ under the License.
 		<module>flink-optimizer</module>
 		<module>flink-streaming-java</module>
 		<module>flink-streaming-scala</module>
-		<module>flink-streaming-connectors</module>
-		<module>flink-batch-connectors</module>
+<!--		<module>flink-streaming-connectors</module>-->
+<!--		<module>flink-batch-connectors</module>-->
 		<module>flink-examples</module>
 		<module>flink-clients</module>
-		<module>flink-tests</module>
-		<module>flink-test-utils</module>
+<!--		<module>flink-tests</module>-->
+<!--		<module>flink-test-utils</module>-->
 		<module>flink-libraries</module>
-		<module>flink-scala-shell</module>
-		<module>flink-quickstart</module>
-		<module>flink-contrib</module>
+<!--		<module>flink-scala-shell</module>-->
+<!--		<module>flink-quickstart</module>-->
+		<!-- <module>flink-contrib</module> -->
 		<!-- <module>flink-dist</module> -->
 	</modules>
 
