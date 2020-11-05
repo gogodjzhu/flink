@@ -73,7 +73,7 @@ under the License.
 		<module>flink-scala-shell</module>
 		<module>flink-quickstart</module>
 		<module>flink-contrib</module>
-		<module>flink-dist</module>
+		<!-- <module>flink-dist</module> -->
 	</modules>
 
 	<properties>
